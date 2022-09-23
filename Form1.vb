@@ -67,4 +67,3 @@ Public Class Form1
         str = ""
     End Sub
 
-End Class
