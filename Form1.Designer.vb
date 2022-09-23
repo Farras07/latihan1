@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -34,6 +34,8 @@ Partial Class Form1
         Me.length_negatif = New System.Windows.Forms.Button()
         Me.sisipkan = New System.Windows.Forms.Button()
         Me.Switch = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TB_newAR = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -86,7 +88,6 @@ Partial Class Form1
         '
         Me.CB_hari.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CB_hari.FormattingEnabled = True
-        Me.CB_hari.Items.AddRange(New Object() {"Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"})
         Me.CB_hari.Location = New System.Drawing.Point(92, 66)
         Me.CB_hari.Name = "CB_hari"
         Me.CB_hari.Size = New System.Drawing.Size(272, 37)
@@ -146,7 +147,7 @@ Partial Class Form1
         'sisipkan
         '
         Me.sisipkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sisipkan.Location = New System.Drawing.Point(317, 424)
+        Me.sisipkan.Location = New System.Drawing.Point(597, 430)
         Me.sisipkan.Name = "sisipkan"
         Me.sisipkan.Size = New System.Drawing.Size(272, 43)
         Me.sisipkan.TabIndex = 3
@@ -156,18 +157,37 @@ Partial Class Form1
         'Switch
         '
         Me.Switch.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Switch.Location = New System.Drawing.Point(303, 485)
+        Me.Switch.Location = New System.Drawing.Point(585, 495)
         Me.Switch.Name = "Switch"
         Me.Switch.Size = New System.Drawing.Size(306, 64)
         Me.Switch.TabIndex = 4
         Me.Switch.Text = "Array Multidimensi"
         Me.Switch.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 430)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(179, 29)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Nilai Array Baru"
+        '
+        'TB_newAR
+        '
+        Me.TB_newAR.Location = New System.Drawing.Point(225, 433)
+        Me.TB_newAR.Name = "TB_newAR"
+        Me.TB_newAR.Size = New System.Drawing.Size(203, 26)
+        Me.TB_newAR.TabIndex = 6
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(903, 571)
+        Me.Controls.Add(Me.TB_newAR)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Switch)
         Me.Controls.Add(Me.sisipkan)
         Me.Controls.Add(Me.GroupBox3)
@@ -180,6 +200,7 @@ Partial Class Form1
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -195,4 +216,6 @@ Partial Class Form1
     Friend WithEvents length_negatif As Button
     Friend WithEvents sisipkan As Button
     Friend WithEvents Switch As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents TB_newAR As TextBox
 End Class
